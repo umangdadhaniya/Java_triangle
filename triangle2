@@ -1,0 +1,28 @@
+package triangle2;
+import java.util.*;
+
+public class Triangle2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float a,b,c,s,area,temp;
+		System.out.println("please enter Value a , b and c");
+		Scanner sc = new Scanner(System.in);
+		a = sc.nextFloat();
+		b = sc.nextFloat();
+		c = sc.nextFloat();
+		
+		s = (a+b+c)/2;
+		System.out.println("s value " + s);
+		
+		temp = s*((s-a)*(s-b)*(s-c));
+		
+		area = (float) Math.sqrt(temp);
+		
+		System.out.println("Squrt Root " + area);
+		
+	
+
+	}
+
+}
